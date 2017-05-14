@@ -1,0 +1,9 @@
+{
+"name": "stebyapivo228-1488",
+"version": "0.0.1",
+"description": "Minimalist multiroom chat",
+"dependencies": {
+	"socket.io": "~0.9.6",
+	"mime": "~1.2.7"
+	}
+}

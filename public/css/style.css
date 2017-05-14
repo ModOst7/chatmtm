@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* ╤Б╨▒╤А╨╛╤Б ╤Б╤В╨╕╨╗╨╡╨╣ ╨▒╤А╨░╤Г╨╖╨╡╤А╨░ */
+* {
+  box-sizing: border-box; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.2; }
+
+ol {
+  padding-left: 1.4em;
+  list-style: decimal; }
+
+ul {
+  padding-left: 1.4em;
+  list-style: square; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ╨║╨╛╨╜╨╡╤Ж ╨║╨╛╨┤╨░ ╤Б╨▒╤А╨╛╤Б╨░ ╤Б╤В╨╕╨╗╨╡╨╣ ╨▒╤А╨░╤Г╨╖╨╡╤А╨░ */
+@font-face {
+  font-family: "Vera";
+  src: url("../fonts/bitstream/vera-webfont.woff");
+  src: url("../fonts/bitstream/vera-webfont.eot?#iefix") format("embeddedopentype"), url("../fonts/bitstream/Vera.ttf") format("truetype"), url("../fonts/bitstream/vera-webfont.svg") format("svg"); }
+@font-face {
+  font-family: "Bebas";
+  src: url("../fonts/bebas/BebasNeue-Regular.woff");
+  src: url("../fonts/bebas/BebasNeue-Regular.eot?#iefix") format("embeddedopentype"), url("../fonts/bebas/BebasNeue-Regular.ttf") format("truetype"), url("../fonts/bebas/BebasNeue-Regular.svg") format("svg"); }
+@font-face {
+  font-family: "Collaborate";
+  src: url("../fonts/collaborate/ColabThi.woff");
+  src: url("../fonts/collaborate/ColabThi.eot?#iefix") format("embeddedopentype"), url("../fonts/collaborate/ColabThi.ttf") format("truetype"), url("../fonts/collaborate/ColabThi.svg") format("svg"); }
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/Lora/lora-regular-webfont.woff");
+  src: url("../fonts/Lora/lora-regular-webfont.eot?#iefix") format("embeddedopentype"), url("../fonts/Lora/Lora-Regular.ttf") format("truetype"), url("../fonts/Lora/lora-regular-webfont.svg") format("svg"); }
+@font-face {
+  font-family: "Playfair";
+  src: url("../fonts/Playfair_Display/playfairdisplay-regular-webfont.woff");
+  src: url("../fonts/Playfair_Display/playfairdisplay-regular-webfont.eot?#iefix") format("embeddedopentype"), url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype"), url("../fonts/Playfair_Display/playfairdisplay-regular-webfont.svg") format("svg"); }
+
+
+html {
+   height: 100%;
+}
+
+body {
+   background: linear-gradient(to bottom, #F85D5D 0%, #F6DBDB 20%, #F6DBDB 80%, #CC2E2E 100%); 
+   padding: 50px;
+   font: 14px "Vera", Helvetica, Arial, sans-serif;
+   height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+   padding: 5px;
+   font-family: "Lora";
+   text-shadow: 3px 3px 10px #2F2B2B;
+}
+
+h2 {
+   font-size: 1.4em;
+}
+
+a {
+   color: #00B7FF;
+}
+
+#content {
+   width: 800px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#room {
+   margin-bottom: 1em;
+   text-shadow: 1px 1px 5px rgba(240, 20, 220, 0.9);
+   font-size: 1.2em;
+}
+
+#messages {
+   width: 690px;
+   height: 300px;
+   overflow: auto;
+   background-color: rgba(240, 240, 240, 0.5);
+   margin-bottom: 1em;
+   margin-right: 10px;
+   border-radius: 10px;
+   box-shadow: 2px 2px 6px rgb(50, 50, 50);
+}
+
+#room-list {
+   float: right;
+   width: 100px;
+   height: 300px;
+   overflow: auto;
+}
+#room-list div {
+   border: 1px solid rgb(200, 20, 200);
+}
+#room-list div:hover {
+   background-color: #ddd;
+}
+#send-message {
+   width: 700px;
+   margin-bottom: 1em;
+   margin-right: 1em;
+   border: none;
+   background-color: white;
+}
+#send-message:focus {
+   box-shadow: 0px 0px 6px rgb(200, 20, 200);
+}
+#help {
+   font: 10px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+#send-button {
+   cursor: pointer;
+   display: inline-block;
+   border: none;
+   position: relative;
+   width: 80px;
+   height: 30px;
+   background-color: #CC2E2E;
+   transition-duration: 0.5s;
+   border-radius: 5px;
+}
+#send-button:hover {
+    background-color: rgba(200,50,200, 0.6);
+    box-shadow: 0px 0px 6px rgb(200, 20, 200);
+}
+

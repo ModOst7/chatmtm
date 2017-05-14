@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+   <title>Chat</title>
+   <link rel='stylesheet' href='css/style.css'></link>
+   <meta charset='UTF-8'>
+</head>
+<body>
+<div id='content'>
+   <h2>Вы в комнате:</h2>
+   <div id='room'></div>
+   <div id='room-list'>
+   </div>
+   <div id='messages'></div>
+   <form id='send-form'>
+      <input id='send-message' placeholder="писать сюда"/>
+      <input id='send-button' type='submit' value='Send'/>
+      <div id='help'>
+         Команды чата:
+         <ul>
+            <li>Для смены ника введите: <code>/nick [username]</code></li>
+            <li>Присоединиться к уже существующей или создать комнату: <code>/join [room name]</code></li>
+         </ul>
+      </div>
+   </form>
+</div>
+
+<script src='node_modules/socket.io-client/dist/socket.io.js'></script>
+<script src='js/jquery-2.2.4.js'></script>
+<script src='js/chat_ui.js'></script>
+<script src='js/chat.js'></script>
+
+</body>
+</html>
